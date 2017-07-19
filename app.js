@@ -471,7 +471,7 @@ define(function(require) {
 				container.find('.topbar-right .list_queues_inner').animate({ scrollLeft: scroll_value }, 0);
 				container.find('#callwaiting-list').append(calls_html);
 
-				self.poll_agents(data, container);
+				//self.poll_agents(data, container);
 				(container).empty().append(html);
 				self.bind_live_events(container);
 
@@ -539,7 +539,7 @@ define(function(require) {
 				var queue_id = this.id;
 				var $self_queue = $(self);
 
-				if($self_queue.hasClass('active')) {
+				if($(event.currentTarget).hasClass('active')) {
 					self.current_queue_id = undefined;
 					$('.agent_wrapper', container).css('display', 'inline-block');
 					$('.all_data', container).show();
@@ -550,6 +550,26 @@ define(function(require) {
 					$('.list_queues_inner > li', container).removeClass('active');
 				} else {
 					self.detail_stat(queue_id, container);
+					self.filter_agents(queue_id, container);
+				}
+			});
+		},
+
+		filter_agents: function(queue_id, container) {
+			var self = this,
+				$self_queue = $('#' + queue_id, container);
+
+			self.current_queue_id = queue_id;
+
+			$('.agent_wrapper', container).each(function(k, v) {
+				var $v = $(v);
+
+				var queues = v.getAttribute('data-queues').split(',');
+
+				if (queues.indexOf(queue_id) > -1) {
+					$v.show();
+				} else {
+					$v.hide();
 				}
 			});
 		},
