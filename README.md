@@ -1,12 +1,6 @@
 # monster-ui-callcenter (Cloudbased Callcenter GUI)
-![callcenter](https://raw.githubusercontent.com/urueedi/monster-ui-callcenter/master/metadata/screenshots/callcenter_1.png)
-![callcenter](https://raw.githubusercontent.com/urueedi/monster-ui-callcenter/master/metadata/screenshots/callcenter_2.png)
-![callcenter](https://raw.githubusercontent.com/urueedi/monster-ui-callcenter/master/metadata/screenshots/callcenter_3.png)
-![callcenter](https://raw.githubusercontent.com/urueedi/monster-ui-callcenter/master/metadata/screenshots/callcenter_4.png)
+Based on the old Kazoo-UI app this provides a view of ACDC queues. It shows queues, all agents, ongoing calls and statistics.
 
-If you need ACD support for kazoo like additional strategy, monster-ui support and so, please ask for support from below
+Polling of stats has been disabled because it is a danger to the health of your system.
 
-Additional Support
-------------------
-Open Phone Net AG infos@openent.ch Switzerland
-
+It will not win any prizes for beauty, functionality, elegance, code quality or usability. But we can't all be winners.

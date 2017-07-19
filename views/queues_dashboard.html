@@ -10,13 +10,13 @@
                     </div>
                     <div class="grid_bottom">
                         <div class="first_row">
-                            <div class="box calls" title="{{ ../i18n.callcenter.missed_calls }}">
+                            <div class="box calls" title="{{ ../i18n.callcenter.calls }}">
                                 <div class="icon_wrapper"><span class="icon medium active_phone"></span></div>
                                 <div class="stat" title="{{ ../i18n.callcenter.busy }}">
                                     <span class="blue">{{current_calls}}</span> / {{total_calls}}
                                 </div>
                             </div>
-                            <div class="box users" title="{{ ../i18n.callcenter.missed_calls }}">
+                            <div class="box users" title="{{ ../i18n.callcenter.agents }}">
                                 <div class="icon_wrapper"><span class="icon medium user"></span></div>
                                 <div class="stat">
                                     <span class="blue">{{current_agents}}</span> / {{max_agents}}
@@ -28,7 +28,7 @@
                                 <div class="icon_wrapper"><span class="icon medium thumb_down"></span></div>
                                 <div class="red">{{abandoned_calls}}</div>
                             </div>
-                            <div class="box hold_time" title="{{ ../i18n.callcenter.missed_calls }}">
+                            <div class="box hold_time" title="{{ ../i18n.callcenter.hold_time }}">
                                 <div class="icon_wrapper"><span class="icon medium hand"></div>
                                 <div class="orange">{{average_hold_time}}</div>
                             </div>
