@@ -167,10 +167,26 @@
     color: #ff9933;
 }
 
+#dashboard-content .dashboard-bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Bottom-left List panel */
 #dashboard-content #callwaiting-list {
     position:relative;
     float: left;
+    margin-left: 30px;
+    padding: 5px;
+    background: transparent linear-gradient(to bottom, #747474 0%, #898989 25%, #747474 50%, #5C5C5C 75%, #4D4D4D 100%) repeat scroll 0% 0%;
+    background: rgb(34,34,34); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 25%, rgba(85,85,85,1) 50%, rgba(68,68,68,1) 75%, rgba(34,34,34,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,34,34,1)), color-stop(25%,rgba(68,68,68,1)), color-stop(50%,rgba(85,85,85,1)), color-stop(75%,rgba(68,68,68,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%,rgba(68,68,68,1) 25%,rgba(85,85,85,1) 50%,rgba(68,68,68,1) 75%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(34,34,34,1) 0%,rgba(68,68,68,1) 25%,rgba(85,85,85,1) 50%,rgba(68,68,68,1) 75%,rgba(34,34,34,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%,rgba(68,68,68,1) 25%,rgba(85,85,85,1) 50%,rgba(68,68,68,1) 75%,rgba(34,34,34,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%,rgba(68,68,68,1) 25%,rgba(85,85,85,1) 50%,rgba(68,68,68,1) 75%,rgba(34,34,34,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
 }
 
 #dashboard-content #callwaiting-list .add_flow {
@@ -203,6 +219,23 @@
     height: 27px;
     line-height: 27px;
     color: #05addc;
+}
+
+#dashboard-content #callwaiting-list .title {
+  list-style: none;
+  padding: 2px;
+  height: 40px;
+  color: #FFF;
+  line-height: 40px;
+  font-size: 17px;
+  border-bottom: 1px solid #555;
+  text-align: center;
+}
+
+#dashboard-content #callwaiting-list .list-element {
+  background: white;
+  list-style: none;
+  padding: 2px;
 }
 
 /* Bottom-right content */
